@@ -1,0 +1,47 @@
+////////////COLORS
+
+//PRIMARY
+
+$orange: hsl(26, 100%, 55%);
+$pale: hsl(25, 100%, 94%);
+
+//NEUTRAL
+
+$very-dark-blue: hsl(220, 13%, 13%);
+$dark-greyish-blue: hsl(219, 9%, 45%);
+$greyish-blue: hsl(220, 14%, 75%);
+$light-greyish-blue: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+$black-75: hsl(0, 0%, 0%); // for lightbox background
+
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.6rem;
+    max-width: 144rem;
+    height: 90rem;
+    margin: 0 auto;
+}
+
+#root {
+    margin: 0 16rem;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin: 9rem 5rem;
+}
+

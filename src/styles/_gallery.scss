@@ -1,0 +1,25 @@
+.gallery {
+    width: 445px;
+
+
+    &__active {
+        width: 445px;
+        margin-bottom: 3rem;
+        border-radius: 10px;
+    }
+
+    &__thumbnails {
+        &-list {
+            width: 445px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item {
+            width: 90px;
+            border-radius: 10px;
+        }
+    }
+
+    
+}

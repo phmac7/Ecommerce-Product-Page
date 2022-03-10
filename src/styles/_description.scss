@@ -1,0 +1,24 @@
+.description {
+    width: 445px;
+    align-self: center;
+    height: 445px;
+
+    &__subtitle {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: $orange;
+        opacity: .8;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__paragraph {
+        color: $dark-greyish-blue;
+        line-height: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+}

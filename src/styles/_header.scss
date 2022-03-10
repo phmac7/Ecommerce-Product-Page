@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    height: 11rem;
+    align-items: center;
+    border-bottom: 1px solid $greyish-blue;
+
+    &__logo {
+        margin-right: 5rem;
+    }
+
+    &__navigation {
+        list-style: none;
+        display: flex;
+        flex: 1;
+        
+        &-item {
+            margin-right: 3rem;
+        }
+
+        &-link,
+        &-link:visited {
+            text-decoration: none;
+            color: $dark-greyish-blue;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 3px;
+                background-color: $orange;
+                top: 62px;
+                left: 0;
+                display:none;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+
+                &::after {
+                    display: block;
+                }
+            }
+            
+
+        }
+
+    }
+
+    &__user-img {
+        width: 50px;
+        border: 2px solid transparent;
+        border-radius: 50%;
+
+        &:hover, 
+        &:active,
+        &:focus {
+            border-color: $orange;
+        }
+    }
+}
+
+
+.cart__button {
+    margin: 0 4rem;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
