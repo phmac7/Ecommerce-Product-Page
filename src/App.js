@@ -1,11 +1,14 @@
 import Header from './components/Header'
 import Product from './components/Product'
+import { MyProvider } from './context'
 
 function App() {
     return (
         <>
-            <Header />
-            <Product />
+            <MyProvider>
+                <Header />
+                <Product />
+            </MyProvider>
         </>
     );
 }

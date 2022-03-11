@@ -3,6 +3,7 @@
     height: 11rem;
     align-items: center;
     border-bottom: 1px solid $greyish-blue;
+    position:relative;
 
     &__logo {
         margin-right: 5rem;
@@ -22,6 +23,7 @@
             text-decoration: none;
             color: $dark-greyish-blue;
             position: relative;
+            font-weight: 400;
 
             &::after {
                 position: absolute;
@@ -37,6 +39,8 @@
             &:hover,
             &:focus,
             &:active {
+
+                color: $very-dark-blue;
 
                 &::after {
                     display: block;
@@ -67,4 +71,6 @@
     border: none;
     cursor: pointer;
     background: transparent;
+
+    
 }

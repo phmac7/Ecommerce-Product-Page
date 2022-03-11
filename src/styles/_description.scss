@@ -22,3 +22,36 @@
         margin-bottom: 2.5rem;
     }
 }
+
+.price {
+
+    &__container {
+        display:flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    &__now {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-right: 2rem;
+    }
+
+    &__discount {
+        display: inline-block;
+        font-weight: 700;
+        color: $orange;
+        background-color: $pale;
+        padding: .4rem .8rem;
+        border-radius: 6px;
+    }
+
+    &__old {
+        display:inline-block;
+        color: $greyish-blue;
+        text-decoration: line-through;
+        font-weight: 700;
+        margin-bottom: 4rem;
+    }
+}
+
