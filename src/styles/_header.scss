@@ -66,11 +66,26 @@
 }
 
 
-.cart__button {
-    margin: 0 4rem;
-    border: none;
-    cursor: pointer;
-    background: transparent;
+.cart{
+    position: relative;
+    
+    &__button {
+        margin: 0 4rem;
+        border: none;
+        cursor: pointer;
+        background: transparent;
+    }
 
+    &__notification {
+        position:absolute;
+        top: -7px;
+        right: 35px;
+        padding: 1.4px 6px;
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: 45%;
+        background-color: $orange;
+        color: $white;
+    }
     
 }

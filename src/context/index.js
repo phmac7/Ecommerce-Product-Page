@@ -6,13 +6,9 @@ class MyProvider extends Component {
 
     state = {
         selectQty: 0,
-        qtyCart: 0,
-        highlight: false
+        qtyCart: 0
     }
 
-    toggleHighlight = () => {
-        this.setState({ highlight: !this.state.highlight })
-    }
 
     addSelectQty = () => {
         const { selectQty } = this.state
@@ -52,7 +48,6 @@ class MyProvider extends Component {
             <MyContext.Provider value={{
                 qtyCart: this.state.qtyCart,
                 selectQty: this.state.selectQty,
-                toggleHighlight: this.toggleHighlight,
                 addSelectQty: this.addSelectQty,
                 decreaseSelectQty: this.decreaseSelectQty,
                 addToCart: this.addToCart,

@@ -6,6 +6,7 @@
         width: 445px;
         margin-bottom: 3rem;
         border-radius: 10px;
+        cursor: pointer;
     }
 
     &__thumbnails {
@@ -18,8 +19,29 @@
         &-item {
             width: 90px;
             border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .6;
+            }
         }
     }
 
     
 }
+
+.thumbnails-active {
+    opacity: .3 !important;
+}
+
+.thumbnail-container {
+    height: 95px;
+    width: 95px;
+    border: 3px solid transparent;
+}
+
+.border-active {
+    border: 3px solid $orange;
+    border-radius: 13px;
+}
+

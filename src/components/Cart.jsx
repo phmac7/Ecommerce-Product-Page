@@ -14,6 +14,8 @@ function Cart() {
                 <button onClick={() => setIsOpen(!isOpen)}
                     className='cart__button'>
                     <CartIcon className='cart__icon' />
+                    {context.qtyCart == 0 ? null :
+                        <span className='cart__notification'>{context.qtyCart}</span>}
                 </button>
             </div>
             {isOpen
@@ -22,7 +24,7 @@ function Cart() {
                         <h4 className='cartTab__header--text'>Cart</h4>
                     </div>
                     <div className='cartTab__content'>
-                        {context.qtyCart == 1
+                        {context.qtyCart == 0
                             ? <span className='cartTab__content--empty'> Your Cart is Empty</span>
                             : <CardContent />}
                     </div>
