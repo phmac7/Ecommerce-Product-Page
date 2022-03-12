@@ -30,6 +30,7 @@ function Modal({ id, selected, setShowModal }) {
             setShowModal(false)
         }
     }, [setShowModal])
+
     useEffect(() => {
         document.addEventListener('keydown', keyPress);
         return () => document.removeEventListener('keydown', keyPress);
