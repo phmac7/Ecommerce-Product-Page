@@ -10,6 +10,7 @@ class MyProvider extends Component {
     }
 
 
+
     addSelectQty = () => {
         const { selectQty } = this.state
         this.setState({
@@ -19,7 +20,7 @@ class MyProvider extends Component {
 
     decreaseSelectQty = () => {
         const { selectQty } = this.state
-        if (selectQty == 0) {
+        if (selectQty === 0) {
         } else {
             this.setState({
                 selectQty: selectQty - 1

@@ -12,7 +12,7 @@ $dark-greyish-blue: hsl(219, 9%, 45%);
 $greyish-blue: hsl(220, 14%, 75%);
 $light-greyish-blue: hsl(223, 64%, 98%);
 $white: hsl(0, 0%, 100%);
-$black-75: hsl(0, 0%, 0%); // for lightbox background
+$black-75: hsla(0, 0%, 0%, 0.75); // for lightbox background
 
 
 *, *:after, *:before {

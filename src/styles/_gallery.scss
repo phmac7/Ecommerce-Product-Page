@@ -41,7 +41,130 @@
 }
 
 .border-active {
-    border: 3px solid $orange;
+    border: 3px solid $orange!important;
     border-radius: 13px;
 }
 
+
+
+/// MODAL /////
+
+
+.modal {
+    &__background {
+        position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black-75;
+    }
+
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__active {
+        width: 445px;
+        margin-bottom: 3rem;
+        border-radius: 10px;
+    }
+
+    &__thumbnails {
+
+        &-container {
+            height: 95px;
+            width: 95px;
+            border: 3px solid transparent;
+            background: #fff;
+            background-clip: content-box;
+            border-radius: 12px;
+        }
+
+        &-list{
+            width: 445px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item{
+            width: 90px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .6;
+            }
+        }
+    }
+}
+
+.thumbnails-modal-active {
+    opacity: .3!important;
+}
+
+.icon {
+    &__container {
+
+        &-previous {
+            position: absolute;
+            background-color: #fff;
+            border:none;
+            cursor:pointer;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            top: 190px;
+            left: -26px;
+        }
+        &-next {
+            position: absolute;
+            background-color: #fff;
+            border:none;
+            cursor:pointer;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            top: 190px;
+            left: 420px;
+        }
+    }
+
+    &__previous {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -50%);
+    }
+    &__next {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -50%);
+    }
+    &__close {
+        position:absolute;
+        top: -35px;
+        left: 430px;
+        transform: scale(1.4);
+        cursor:pointer;
+
+        & path {
+            fill: $white;
+        }
+        &:hover path {
+            fill: $orange;
+        }
+    }
+    
+}
+
+.icon__container-previous:hover .icon__previous path {
+    stroke: $orange;
+}
+.icon__container-next:hover .icon__next path {
+    stroke: $orange;
+}
