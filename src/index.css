@@ -39,6 +39,22 @@ body {
   }
 }
 
+.attribution {
+  text-align: center;
+}
+.attribution a, .attribution a:visited {
+  text-decoration: none;
+  color: #ff7d1a;
+}
+.attribution a:hover, .attribution a:visited:hover {
+  border-bottom: 1px solid #ff7d1a;
+}
+@media only screen and (max-width: 375px) {
+  .attribution {
+    margin-top: 3rem;
+  }
+}
+
 .header {
   display: flex;
   height: 11rem;
@@ -76,7 +92,7 @@ body {
     left: 0;
     flex-direction: column;
     background-image: linear-gradient(to right, white 0 65%, rgba(0, 0, 0, 0.75) 65% 100%);
-    height: 98vh;
+    height: 105vh;
     width: 100vw;
     z-index: 20;
   }
@@ -525,6 +541,7 @@ body {
   .addcart {
     height: 5rem;
     width: 100%;
+    margin-top: 1rem;
   }
 }
 .addcart__text {
