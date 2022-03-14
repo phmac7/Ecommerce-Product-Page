@@ -312,12 +312,14 @@ body {
   width: 445px;
   margin-bottom: 3rem;
   border-radius: 10px;
+  height: 445px;
   cursor: pointer;
 }
 @media only screen and (max-width: 375px) {
   .gallery__active {
     width: 100%;
     border-radius: 0px;
+    height: 300px;
   }
 }
 .gallery__active--container {
@@ -421,6 +423,7 @@ body {
   width: 445px;
   margin-bottom: 3rem;
   border-radius: 10px;
+  height: 445px;
 }
 .modal__thumbnails-container {
   height: 95px;
