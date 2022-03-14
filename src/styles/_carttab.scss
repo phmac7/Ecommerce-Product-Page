@@ -11,6 +11,11 @@
     flex-direction: column;
     z-index: 1;
 
+    @media only screen and (max-width: 375px){
+        width: 95%;
+        right: 2.5%;
+    }
+
 
     &__header {
         height: 70px;

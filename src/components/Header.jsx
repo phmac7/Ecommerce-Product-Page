@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from '../images/logo.svg'
 import NavBar from './NavBar'
 import Cart from './Cart'
 import { ReactComponent as Menu } from '../images/icon-menu.svg'
+import { AnimatePresence } from 'framer-motion'
 
 function Header() {
 
@@ -37,10 +38,11 @@ function Header() {
             <div className="header__logo">
                 <Logo className='header__logo-img' />
             </div>
-            {showNav
-                ? <NavBar />
-                : null}
-
+            <AnimatePresence>
+                {showNav
+                    ? <NavBar setShowNav={setShowNav} showNav={showNav} />
+                    : null}
+            </AnimatePresence>
             <Cart />
             <a href='#' className='header__user'>
                 <img src={require("../images/image-avatar.png")} alt="user" className="header__user-img" />

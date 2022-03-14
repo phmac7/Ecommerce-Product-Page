@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Gallery from './Gallery'
 import Description from './Description'
 import Modal from './Modal'
+import { AnimatePresence } from 'framer-motion'
 
 function Product() {
     const id = [1, 2, 3, 4]
@@ -30,12 +31,15 @@ function Product() {
                 showModal={showModal} setShowModal={setShowModal}
                 size={size} />
             <Description />
-            {(showModal && (size > 1000))
-                ? <Modal
-                    id={id}
-                    selected={selected}
-                    setShowModal={setShowModal} />
-                : null}
+            <AnimatePresence>
+                {(showModal && (size > 1000))
+                    ? <Modal
+                        id={id}
+                        selected={selected}
+                        setShowModal={setShowModal}
+                        showModal={showModal} />
+                    : null}
+            </AnimatePresence>
 
         </main>
     )

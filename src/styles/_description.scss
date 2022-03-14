@@ -3,6 +3,13 @@
     align-self: center;
     height: 445px;
 
+    @media only screen and (max-width: 375px){
+        margin-top: 2rem;
+        width: auto;
+        align-self: auto;
+        padding: 0 2rem;
+    }
+
     &__subtitle {
         text-transform: uppercase;
         font-size: 1.4rem;
@@ -14,6 +21,10 @@
     &__title {
         font-size: 4.5rem;
         margin-bottom: 3rem;
+        @media only screen and (max-width: 375px){
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
     }
 
     &__paragraph {
@@ -29,6 +40,15 @@
         display:flex;
         align-items: center;
         margin-bottom: 1rem;
+
+        &-all {
+            @media only screen and (max-width: 375px){
+                display:flex;
+                margin-bottom: 3rem;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
     }
     &__now {
         display: inline-block;
@@ -47,11 +67,15 @@
     }
 
     &__old {
-        display:inline-block;
+        display: block;
         color: $greyish-blue;
         text-decoration: line-through;
         font-weight: 700;
         margin-bottom: 4rem;
+
+        @media only screen and (max-width: 375px){
+            margin-bottom: .8rem;
+        }
     }
 }
 

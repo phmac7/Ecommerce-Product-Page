@@ -1,5 +1,8 @@
 .gallery {
     width: 445px;
+    @media only screen and (max-width: 375px){
+        width: 100%;           
+    }
 
 
     &__active {
@@ -7,6 +10,61 @@
         margin-bottom: 3rem;
         border-radius: 10px;
         cursor: pointer;
+        @media only screen and (max-width: 375px){
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        &--container{
+            position: relative;
+        }
+
+        &--previous{
+            display: none;
+            @media only screen and (max-width: 375px){
+                display:block;
+                position: absolute;
+                border: none;
+                width: 50px;
+                border-radius: 50%;
+                height: 50px;
+                top: 38%;
+                left: 1.3rem;
+                cursor: pointer;
+                z-index: 5;
+            }
+    
+
+            &-svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-60%, -50%);
+            }
+        }
+
+        &--next {
+            display: none;
+            @media only screen and (max-width: 375px){
+                display:block;
+                position: absolute;
+                border: none;
+                width: 50px;
+                border-radius: 50%;
+                height: 50px;
+                top: 38%;
+                right: 1.3rem;
+                
+            }
+    
+            cursor: pointer;
+            &-svg{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-40%, -50%);
+            }
+        }
     }
 
     &__thumbnails {
@@ -14,6 +72,9 @@
             width: 445px;
             display: flex;
             justify-content: space-between;
+            @media only screen and (max-width: 375px){
+                display:none;
+            }
         }
 
         &-item {

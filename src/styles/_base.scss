@@ -47,5 +47,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 9rem 5rem;
+
+    @media only screen and (max-width: 375px){
+        margin: 0;
+        flex-direction: column;
+    }
 }
 

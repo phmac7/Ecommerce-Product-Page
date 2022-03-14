@@ -6,10 +6,22 @@ class MyProvider extends Component {
 
     state = {
         selectQty: 0,
-        qtyCart: 0
+        qtyCart: 0,
+        isCartOpen: false
     }
 
-
+    setIsCartOpen = (arg) => {
+        const { isCartOpen } = this.state
+        if (arg === false) {
+            this.setState({
+                isCartOpen: false
+            })
+        } else if (arg === true) {
+            this.setState({
+                isCartOpen: true
+            })
+        }
+    }
 
     addSelectQty = () => {
         const { selectQty } = this.state
@@ -52,7 +64,9 @@ class MyProvider extends Component {
                 addSelectQty: this.addSelectQty,
                 decreaseSelectQty: this.decreaseSelectQty,
                 addToCart: this.addToCart,
-                resetCart: this.resetCart
+                resetCart: this.resetCart,
+                isCartOpen: this.state.isCartOpen,
+                setIsCartOpen: this.setIsCartOpen
 
             }}>
                 {this.props.children}
