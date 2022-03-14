@@ -21,6 +21,16 @@ body {
   margin: 0 16rem;
   height: 100%;
 }
+@media only screen and (max-width: 1360px) {
+  #root {
+    margin: 0 6rem;
+  }
+}
+@media only screen and (max-width: 1120px) {
+  #root {
+    margin: 0 4rem;
+  }
+}
 @media only screen and (max-width: 375px) {
   #root {
     margin: 0;
@@ -31,6 +41,11 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 9rem 5rem;
+}
+@media only screen and (max-width: 1120px) {
+  .main {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 375px) {
   .main {
@@ -394,6 +409,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
+  z-index: 20;
 }
 .modal__container {
   position: absolute;
@@ -566,7 +582,7 @@ body {
   border-radius: 6px;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 10;
 }
 @media only screen and (max-width: 375px) {
   .cartTab {

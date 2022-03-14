@@ -38,15 +38,28 @@ body {
     margin: 0 16rem;
     height: 100%;
 
+    @media only screen and (max-width: 1360px ){
+        margin: 0 6rem;
+    }
+    @media only screen and (max-width: 1120px ){
+        margin: 0 4rem;
+    }
+
+
     @media only screen and (max-width: 375px){
         margin: 0;
     }
+
 }
 
 .main {
     display: flex;
     justify-content: space-between;
     margin: 9rem 5rem;
+
+    @media only screen and (max-width: 1120px ){
+        margin: 0;
+    }
 
     @media only screen and (max-width: 375px){
         margin: 0;
